@@ -25,11 +25,9 @@ declare -A versions=(
     [display]="AU_TECHPACK_DISPLAY.LA.3.0.R1.00.00.00.000.111"
     [graphics]="AU_TECHPACK_GRAPHICS.LA.1.0.R1.00.00.00.000.069"
     [kernelplatform]="AU_LINUX_KERNEL.PLATFORM.2.0.R1.00.00.00.004.149"
-    [sensor]="AU_TECHPACK_SENSORS.LA.3.0.R1.00.00.00.000.042"
     [system]="AU_LINUX_ANDROID_LA.QSSI.13.0.R1.13.00.00.913.121.00"
     [vendor]="AU_LINUX_ANDROID_LA.VENDOR.13.2.0.R1.11.00.00.925.214"
     [video]="AU_TECHPACK_VIDEO.LA.3.0.R1.00.00.00.000.070"
-    [xr]="AU_TECHPACK_XR.LA.1.0.R1.00.00.00.000.042"
     [def_system]="default_LA.QSSI.13.0.r1-10300-qssi.0"
 )
 
