@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project remote="clo-la" name="platform/hardware/qcom/audio-ar" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="eea64e34f00dd369528f969a2a3833aed2294175" upstream="refs/heads/audio-android-hal.lnx.3.0.r1-rel" groups="base">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/audio_vendor_product.mk" src="configs/audio_vendor_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/audio-techpack.mk" src="configs/kalama/audio-techpack.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/audio-hal/st-hal-ar" path="vendor/qcom/opensource/audio-hal/st-hal" revision="7b7c6fc84e771e46a753db5b756103d6f4efb573" upstream="refs/heads/audio-android-hal.lnx.3.0.r1-rel" groups="hal"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/agm" path="vendor/qcom/opensource/agm" revision="ba8b11c0813dfb9a8e5b57096edc544e293ce8ef" upstream="refs/heads/audio-platform-arintf.lnx.1.0.r10-rel" groups="hal"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/arpal-lx" path="vendor/qcom/opensource/pal" revision="9d155252905d8f7aa474189f087632e1553e5c5e" upstream="refs/heads/audio-platform-arintf.lnx.1.0.r10-rel" groups="hal"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" revision="a48257daca30c596cc69e0f053f9a4091fc9ffa0" upstream="refs/heads/audio-kernel.lnx.5.15.r1-rel" groups="kernel">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/audio_kernel_vendor_board.mk" src="audio_kernel_vendor_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/audio_kernel_product_board.mk" src="audio_kernel_product_board.mk"/>
+  </project>
+</manifest>
