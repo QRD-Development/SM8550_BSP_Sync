@@ -27,6 +27,7 @@ declare -A versions=(
     [kernelplatform]="AU_LINUX_KERNEL.PLATFORM.2.0.R1.00.00.00.004.149"
     [system]="AU_LINUX_ANDROID_LA.QSSI.13.0.R1.13.00.00.913.121.00"
     [vendor]="AU_LINUX_ANDROID_LA.VENDOR.13.2.0.R1.11.00.00.925.214"
+    [le]="AU_LINUX_EMBEDDED_LE.UM.6.3.3.R1_TARGET_ALL.01.427.202"
     [video]="AU_TECHPACK_VIDEO.LA.3.0.R1.00.00.00.000.070"
     [def_system]="default_LA.QSSI.13.0.r1-10300-qssi.0"
 )
@@ -46,6 +47,9 @@ for key in "${!versions[@]}"; do
             ;;
         system | vendor)
             url="$base_url/la/la/$key/manifest/-/raw/release/$filename"
+            ;;
+        le)
+            url="$base_url/le/le/manifest/-/raw/release/$filename"
             ;;
         def_system)
             url="$base_url/la/la/system/manifest/-/raw/release/$filename"

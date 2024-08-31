@@ -3,6 +3,7 @@
 BUILD_ROOT="$PWD"
 QSSI_ROOT="${BUILD_ROOT}/qssi"
 VENDOR_ROOT="${BUILD_ROOT}/vendor"
+LE_ROOT="${BUILD_ROOT}/le"
 
 function sync_repo {
     mkdir -p "$1" && cd "$1"
@@ -26,6 +27,7 @@ function sync_repo {
 
 sync_repo "$QSSI_ROOT" "qssi.xml"
 sync_repo "$VENDOR_ROOT" "target.xml"
+sync_repo "$LE_ROOT" "le.xml"
 
 cd "$BUILD_ROOT"
 echo "[+] Successfully returned to the build root."
