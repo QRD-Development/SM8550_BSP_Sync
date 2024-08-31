@@ -16,7 +16,6 @@ function build_target {
 
 function build_qssi {
     cd "$QSSI_DIR"
-
     source build/envsetup.sh
     lunch qssi-userdebug
     ./build.sh dist --qssi_only -j "$(nproc --all)"
