@@ -5,6 +5,6 @@
   <include name="common.xml"/>
 
   <!-- CodeLinaro -->
-  <include name="clo/system.xml"/>
+  <include name="clo/qssi_system.xml"/>
 
 </manifest>

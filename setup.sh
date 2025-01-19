@@ -19,17 +19,18 @@ mkdir -p "$download_dir"
 
 # Declaration of versions using associative arrays
 declare -A versions=(
-    [audio]="AU_TECHPACK_AUDIO.LA.8.0.R1.00.00.00.000.095"
-    [camera]="AU_TECHPACK_CAMERA.LA.3.0.R1.00.00.00.000.082"
-    [cv]="AU_TECHPACK_CV.LA.1.0.R1.00.00.00.000.040"
-    [display]="AU_TECHPACK_DISPLAY.LA.3.0.R1.00.00.00.000.111"
-    [graphics]="AU_TECHPACK_GRAPHICS.LA.1.0.R1.00.00.00.000.069"
-    [kernelplatform]="AU_LINUX_KERNEL.PLATFORM.2.0.R1.00.00.00.004.149"
-    [system]="AU_LINUX_ANDROID_LA.QSSI.13.0.R1.13.00.00.913.121.00"
-    [vendor]="AU_LINUX_ANDROID_LA.VENDOR.13.2.0.R1.11.00.00.925.214"
-    [le]="AU_LINUX_EMBEDDED_LE.UM.6.3.3.R1_TARGET_ALL.01.427.202"
-    [video]="AU_TECHPACK_VIDEO.LA.3.0.R1.00.00.00.000.070"
-    [def_system]="default_LA.QSSI.13.0.r1-10300-qssi.0"
+    [audio]="AU_TECHPACK_AUDIO.LA.8.0.R1.00.00.00.000.121"
+    [camera]="AU_TECHPACK_CAMERA.LA.3.0.R1.00.00.00.000.104"
+    [cv]="AU_TECHPACK_CV.LA.1.0.R1.00.00.00.000.053"
+    [display]="AU_TECHPACK_DISPLAY.LA.3.0.R1.00.00.00.000.127"
+    [graphics]="AU_TECHPACK_GRAPHICS.LA.1.0.R1.00.00.00.000.093"
+    [kernelplatform]="AU_LINUX_KERNEL.PLATFORM.2.0.R1.00.00.00.004.194"
+    [qssi_system]="AU_LINUX_ANDROID_LA.QSSI.15.0.R1.11.00.00.1136.120.00"
+    [system]="AU_LINUX_ANDROID_LA.QSSI.13.0.R1.13.00.00.913.147.00"
+    [vendor]="AU_LINUX_ANDROID_LA.VENDOR.13.2.0.R1.11.00.00.925.259"
+    [le]="AU_LINUX_EMBEDDED_LE.UM.6.3.3.R1_TARGET_ALL.01.427.242"
+    [video]="AU_TECHPACK_VIDEO.LA.3.0.R1.00.00.00.000.092"
+    [def_system]="default_LA.QSSI.13.0.r1-14700-qssi.0"
 )
 
 # Loop through each tech pack and process accordingly
@@ -44,6 +45,9 @@ for key in "${!versions[@]}"; do
             ;;
         kernelplatform)
             url="$base_url/la/$key/manifest/-/raw/release/$filename"
+            ;;
+        qssi_system)
+            url="$base_url/la/la/system/manifest/-/raw/release/$filename"
             ;;
         system | vendor)
             url="$base_url/la/la/$key/manifest/-/raw/release/$filename"
