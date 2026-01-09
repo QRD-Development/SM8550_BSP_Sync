@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project remote="clo-la" name="abl/tianocore/edk2" path="kernel_platform/bootable/bootloader/edk2" revision="b626c6a5410cccea4d6b13bc90f74fc7dce37d9b" upstream="refs/heads/uefi.lnx.4.0.r1-rel"/>
+  <project remote="clo-la" name="abl/tianocore/edk2" path="kernel_platform/bootable/bootloader/edk2" revision="2bfe29a9a3afa579d111edd382e90aa68a1795af" upstream="refs/heads/uefi.lnx.4.0.r1-rel"/>
   <project remote="clo-la" name="kernel/build" path="kernel_platform/build/kernel" revision="1e1d6bcfbbba3e7bf6942166f8cd58d2887862df" upstream="refs/heads/kernel.lnx.5.15.r1-rel">
     <linkfile dest="kernel_platform/build/build.sh" src="build.sh"/>
     <linkfile dest="kernel_platform/build/build_abi.sh" src="build_abi.sh"/>
@@ -22,10 +22,10 @@
     <linkfile dest="kernel_platform/build/abi" src="abi"/>
     <linkfile dest="kernel_platform/build/static_analysis" src="static_analysis"/>
   </project>
-  <project remote="clo-la" name="kernel/common" path="kernel_platform/common" revision="57db0f0c7f4b0c22fe9d2383e12ccd8cd1f63751" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel" groups="qki">
+  <project remote="clo-la" name="kernel/common" path="kernel_platform/common" revision="cec7c06d2a5ce3515b17177a0c248383e18fec0d" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel" groups="qki">
     <linkfile dest=".source_date_epoch_dir" src="."/>
   </project>
-  <project remote="clo-la" name="kernel/msm-5.15" path="kernel_platform/msm-kernel" revision="4d5a00ba459e6743f5fcd487d81c7e8e4ebabae5" upstream="refs/heads/kernel.lnx.5.15.r1-rel"/>
+  <project remote="clo-la" name="kernel/msm-5.15" path="kernel_platform/msm-kernel" revision="6c331a3edd2c67edace90b7cb471447fdc6e3a4d" upstream="refs/heads/kernel.lnx.5.15.r1-rel"/>
   <project remote="clo-la" name="kernel/prebuilts/build-tools" path="kernel_platform/prebuilts/kernel-build-tools" revision="refs/heads/ks-kernel.lnx.2.0.r1-rel" clone-depth="1"/>
   <project remote="clo-la" name="kernel_platform/build/bazel_common_rules" path="kernel_platform/build/bazel_common_rules" revision="25c9ea1930b597b31964bfb51ec9ff7ffb5cc2c7" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>
   <project remote="clo-la" name="kernel_platform/external/bazel-skylib" path="kernel_platform/external/bazel-skylib" revision="8908ad2471f44bf192a869189c35fb74ff8aa307" upstream="refs/heads/ks-kernel.lnx.2.0.r1-rel"/>

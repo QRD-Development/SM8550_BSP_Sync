@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project remote="clo-la" name="meta-qti-display" path="meta-qti-display" revision="b8dd8605f2fcf5226e6851a9d34cb9c2a1f75cc9" upstream="refs/heads/display-le.lnx.3.0.r1-rel"/>
-  <project remote="clo-la" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="663656eb6111478f035784cab3987f2730622590" upstream="refs/heads/display.lnx.9.0.r1-rel">
+  <project remote="clo-la" name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="4cec1b49657a37aef531c5f9450b3234dd0904fd" upstream="refs/heads/display.lnx.9.0.r1-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-techpack.mk" src="config/display-techpack.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
