@@ -19,18 +19,20 @@ mkdir -p "$download_dir"
 
 # Declaration of versions using associative arrays
 declare -A versions=(
-    [audio]="AU_TECHPACK_AUDIO.LA.8.0.R1.00.00.00.000.125"
-    [camera]="AU_TECHPACK_CAMERA.LA.3.0.R1.00.00.00.000.108"
-    [cv]="AU_TECHPACK_CV.LA.1.0.R1.00.00.00.000.059"
-    [display]="AU_TECHPACK_DISPLAY.LA.3.0.R1.00.00.00.000.134"
-    [graphics]="AU_TECHPACK_GRAPHICS.LA.1.0.R1.00.00.00.000.098"
-    [kernelplatform]="AU_LINUX_KERNEL.PLATFORM.2.0.R1.00.00.00.004.204"
-    [qssi_system]="AU_LINUX_ANDROID_LA.QSSI.16.0.R1.11.00.00.1274.076"
-    [system]="AU_LINUX_ANDROID_LA.QSSI.13.0.R1.13.00.00.913.164.00"
-    [vendor]="AU_LINUX_ANDROID_LA.VENDOR.13.2.0.R1.11.00.00.925.270"
-    [le]="AU_LINUX_EMBEDDED_LE.UM.6.3.3.R1_TARGET_ALL.01.427.254"
-    [video]="AU_TECHPACK_VIDEO.LA.3.0.R1.00.00.00.000.099"
-    [def_system]="default_LA.QSSI.13.0.r1-16400-qssi.0"
+    [audio]="AU_TECHPACK_AUDIO.LA.8.0.R1.00.00.00.000.128"
+    [camera]="AU_TECHPACK_CAMERA.LA.3.0.R1.00.00.00.000.111"
+    [cv]="AU_TECHPACK_CV.LA.1.0.R1.00.00.00.000.061"
+    [display]="AU_TECHPACK_DISPLAY.LA.3.0.R1.00.00.00.000.137"
+    [graphics]="AU_TECHPACK_GRAPHICS.LA.1.0.R1.00.00.00.000.101"
+    [kernelplatform]="AU_LINUX_KERNEL.PLATFORM.2.0.R1.00.00.00.004.210"
+    [qssi_system]="AU_LINUX_ANDROID_LA.QSSI.16.0.R1.11.00.00.1274.107"
+    [system]="AU_LINUX_ANDROID_LA.QSSI.13.0.R1.13.00.00.913.173.00"
+    [vendor]="AU_LINUX_ANDROID_LA.VENDOR.13.2.0.R1.11.00.00.925.273"
+    [le]="AU_LINUX_EMBEDDED_LE.UM.6.3.3.R1_TARGET_ALL.01.427.256"
+    [video]="AU_TECHPACK_VIDEO.LA.3.0.R1.00.00.00.000.102"
+    [sensor]="AU_TECHPACK_SENSORS.LA.3.0.R1.00.00.00.000.062"
+    [xr]="AU_TECHPACK_XR.LA.1.0.R1.00.00.00.000.062"
+    [def_system]="default_LA.QSSI.13.0.r1-17300-qssi.0"
 )
 
 # Loop through each tech pack and process accordingly
